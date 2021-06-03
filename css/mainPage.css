@@ -1,0 +1,66 @@
+#mainBody{
+	overflow-x: hidden;
+}
+#mainMe{
+	height:100vh;
+	width:99vw;
+	margin:1vh auto;
+}
+#mainWorks{
+	height:100vh;
+	width:99vw;
+	margin:1vh auto;
+}
+#mainOther{
+	height:100vh;
+	width:99vw;
+	margin:1vh auto;
+}
+#mainMePicture{
+	background-image:url("../images/blue-stock.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100vw;
+	height:100vh;
+}
+#mainWorksPicture{
+	background-image:url("../images/stock-tech.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100vw;
+	height:100vh;
+}
+#mainOtherPicture{
+	background-image:url("../images/stock-water.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100vw;
+	height:100vh;
+}
+#mainMeSummary{
+	vertical-align: top;
+}
+#mainWorksSummary{
+	vertical-align: top;
+}
+#mainOtherSummary{
+	vertical-align: top;
+}
+#mainMeSummary p{
+	padding:2% 5% 5% 5%;
+	font-weight:bold;
+	text-align: justify;
+	line-height:35px;
+}
+#mainWorksSummary p{
+	padding:2% 5% 5% 5%;
+	font-weight:bold;
+	text-align: justify;
+	line-height:35px;
+}
+#mainOtherSummary p{
+	padding:2% 5% 5% 5%;
+	font-weight:bold;
+	text-align: justify;
+	line-height:35px;
+}

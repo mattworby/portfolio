@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Matt's Portfolio</title>
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="Matt Worby">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/navBar.css">
+  <link rel="stylesheet" href="../css/projectPages.css">
+
+</head>
+
+<body>
+	<div id="navBar">
+		<a href="index.html"><div id="namePlate">
+			<h2>Matt Worby</h2>
+		</div></a>
+		
+		<div id="navItems">
+			<a href="../index.html"><div id="homeNav">
+				Home
+			</div></a>
+			<a href="../workMain.html"><div id="workNav">
+				Work
+			</div></a>
+			<a href="../about.html"><div id="aboutNav">
+				About
+			</div></a>
+			<div id="resumeNav" onclick="changePage(this.id)">
+				Resume
+			</div>
+			<div id="linkedNav" onclick="changePage(this.id)">
+			</div>
+		</div>
+	</div>
+	
+	<div id="projectMainBody">
+		<h2>Equation Calculator</h2>
+		<h4><i>My First Major Project</i></h4>
+		<p>When I was 18 and first beginning my journey into programming, I was particularly ambitious with projects that I wanted to create. One of which was a calculator that not only did the normal functionality
+		but set up all of the formulas for you with minimal input from the end-user. This project was 9 years ago back when phone apps were starting to become more and more powerful and although I knew that other products
+		were on the market, this was my own and tested my own ability to make a phone app. The project started out rather small getting the main functions to work, some basic formulas, and, ultimately, learning how
+		to make an Android application. As I progressed in my courses in college, I learned more/better techniques and added what I could to the application and transformed it into a massive calculator that performed
+		hundreds of equations. It was not always the prettiest application to use, but it was more about the learning experience of making it that I adhered to. A LOT of the code in the application was incredibly
+		poor, unoptimized, and all-around ugly to look at but, again, this was the first real coding experience I had and was evolving with me. In the end, the calculator was able to do simple calculus, geometry,
+		algabraic equations, unit conversions, trigonometry, physics equations, and chemistry equations. The main premise of these equations was that the user enters in the information that they knew and the calculator
+		would automatically solve for what was missing or let them know that it needs more information.
+		<br>
+		</p>
+		
+		<img src="../images/equation/calculatorapp.jpg" style="width:100%;">
+		<sub>
+		Please note that the images shown are not from the application I made. Since the Android application was made ~9 years ago, most, if not all, of the assets have been lost.
+		</sub>
+	</div>
+	
+<!-- Footer -->
+  <footer class="bg-black">
+    <div class="container py-5">
+      <div class="row py-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+		  <h6 class="text-uppercase font-weight-bold mb-4">About Me</h6>
+          <p class="text-muted mb-4">A backend developer who is very passionate about design and frontend development with hopes to make a career in UI/UX design.</p>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Site</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="index.html" class="text-muted">Home</a></li>
+            <li class="mb-2"><a href="workMain.html" class="text-muted">Work</a></li>
+            <li class="mb-2"><a href="about.html" class="text-muted">About</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Resume</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Projects</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="../projects/twitch.html" class="text-muted">Twitch</a></li>
+            <li class="mb-2"><a href="../projects/cat.html" class="text-muted">Cat Game</a></li>
+            <li class="mb-2"><a href="../projects/equation.html" class="text-muted">Equation Calculator</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Contact Me</h6>
+          <p class="text-muted mb-4">Please feel free follow the icons below to view more material or contact me at mattworby@gmail.com!</p>
+          <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square"></i></button>
+		  <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('github')"><i class="fa fa-github"></i></button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

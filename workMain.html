@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Matt's Portfolio</title>
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="Matt Worby">
+
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="css/navBar.css">
+  <link rel="stylesheet" href="css/workMain.css">
+  <link rel="icon" href="images/logo_bw.png">
+
+</head>
+
+<body>
+	<div id="navBar">
+		<a href="index.html"><div id="namePlate">
+			<h2>Matt Worby</h2>
+		</div></a>
+		
+		<div id="navItems">
+			<a href="index.html"><div id="homeNav">
+				Home
+			</div></a>
+			<a href="#"><div id="workNav">
+				Work
+			</div></a>
+			<a href="about.html"><div id="aboutNav">
+				About
+			</div></a>
+			<div id="resumeNav" onclick="changePage(this.id)">
+				Resume
+			</div>
+			<div id="linkedNav" onclick="changePage(this.id)">
+			</div>
+		</div>
+	</div>
+	
+	<div id="workMainBody">
+		<div id="workMainRow1" class="workRow">
+			<a href="projects/twitch.html" onmouseover="showText('twitch','show')" onmouseout="showText('twitch','hide')"><div id="workMainTwitch" class="workLink"><h2 style="display:none;" id="workTwitchText">Twitch</h2></div></a>
+			<a href="projects/cat.html" onmouseover="showText('cat','show')"onmouseout="showText('cat','hide')"><div id="workMainCat" class="workLink"><h2 style="display:none;" id="workCatText">Cat Game</h2></div></a>
+			<a href="projects/equation.html" onmouseover="showText('equation','show')" onmouseout="showText('equation','hide')"><div id="workMainEquation" class="workLink"><h2 style="display:none;" id="workEquationText">Equation Calculator</h2></div></a>
+		</div>
+		<div id="workMainRow2" class="workRow">
+			<div id="workMain4"></div>
+			<div id="workMain5"></div>
+			<div id="workMain6"></div>
+		</div>
+	</div>
+	
+<!-- Footer -->
+  <footer class="bg-black">
+    <div class="container py-5">
+      <div class="row py-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+		  <h6 class="text-uppercase font-weight-bold mb-4">About Me</h6>
+          <p class="text-muted mb-4">A backend developer who is very passionate about design and frontend development with hopes to make a career in UI/UX design.</p>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Site</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="index.html" class="text-muted">Home</a></li>
+            <li class="mb-2"><a href="workMain.html" class="text-muted">Work</a></li>
+            <li class="mb-2"><a href="about.html" class="text-muted">About</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Resume</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Projects</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="projects/twitch.html" class="text-muted">Twitch</a></li>
+            <li class="mb-2"><a href="projects/cat.html" class="text-muted">Cat Game</a></li>
+            <li class="mb-2"><a href="projects/equation.html" class="text-muted">Equation Calculator</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Contact Me</h6>
+          <p class="text-muted mb-4">Please feel free follow the icons below to view more material or contact me at mattworby@gmail.com!</p>
+          <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square"></i></button>
+		  <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('github')"><i class="fa fa-github"></i></button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+#aboutBody{
+	width: 100vw;
+	max-width: 1440px;
+	height: 60vh;
+	margin: 0 auto;
+	margin-top:10vh;
+	display:flex;
+}
+#aboutText{
+	display:flex;
+	height:100%;
+	width:50%;
+	justify-content: center;
+	align-items: center;
+}
+#aboutImage{
+	display:flex;
+	height:100%;
+	width:50%;
+	background-image:url("../images/headshot.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	float:right;
+}
+#aboutText h2{
+	margin:10%;
+}
