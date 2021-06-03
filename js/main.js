@@ -1,7 +1,7 @@
 function changePage(id){
 	switch (id){
 		case 'resumeNav':
-			window.open('file:///C:/Users/PC%20Master%20Race/Desktop/portfolio/Resume/resume.pdf');
+			window.open('https://mattworby.github.io/portfolio/resume/resume.pdf');
 			break;
 		case 'linkedNav':
 			window.open('https://www.linkedin.com/in/mattworby13a87b123/')
