@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   <title>Matt's Portfolio</title>
   <meta name="description" content="Portfolio">
@@ -19,12 +20,8 @@
 </head>
 
 <body>
-	<div id="navBar">
-		<a href="../index.html"><div id="namePlate">
-			<h2>Matt Worby</h2>
-		</div></a>
-		
-		<div id="navItems">
+	<div id="mobileNavMenu">
+		<div id="innerMobileMenu">
 			<a href="../index.html"><div id="homeNav">
 				Home
 			</div></a>
@@ -41,16 +38,41 @@
 			</div>
 		</div>
 	</div>
+	<div id="navBar">
+		<a href="../index.html"><div id="namePlate">
+			<h2>Matt Worby</h2>
+		</div></a>
+		
+		<div id="navItems">
+			<a href="../index.html"><div id="homeNav">
+				Home
+			</div></a>
+			<a href="../workMain.html"><div id="workNav">
+				Work
+			</div></a>
+			<a href="../about.html"><div id="aboutNav">
+				About
+			</div></a>
+			<div id="../resumeNav" onclick="changePage(this.id)">
+				Resume
+			</div>
+			<div id="linkedNav" onclick="changePage(this.id)">
+			</div>
+		</div>
+		<div id="mobileNav" onclick="openMobileMenu()" style="background-image:url(../images/mobile/hamburger.png);">
+		</div>
+	</div>
+	
 	
 	<div id="projectMainBody">
 		<h2>Twitch</h2>
 		<h4><i>Bot Programming & Chat Interactivity</i></h4>
 		<p>Twitch, a streaming platform, has offered many new and interesting ways for people to interact with others. To over simplify how the website works, a single entity, typically an individual, will streaming
-		themselves performing something. This "something" can be virtually anything that adheres to the websites Terms of Service from video games to reacting to Yotube, or in the creative realm of dancing, drawing,
+		themselves performing something. This "something" can be virtually anything that adheres to the websites Terms of Service from video games to reacting to Youtube, or in the creative realm of dancing, drawing,
 		creating music, or other performance mediums. While the person(s) stream, anyone can watch and interact with the streamer through a chatbox that would display to all other on-lookers and to the streamer, themselves.
-		During the length of COVID-19's quarentine, I spent many hours streaming myself programming various simple, silly projects. The main focus for all of the projects that I developed was interactivity for the
+		During the length of COVID-19's quarantine, I spent many hours streaming myself programming various simple, silly projects. The main focus for all of the projects that I developed was interactivity for the
 		viewers that were typing in the chatbox. This proved rather difficult but not impossible. It was a very fun, interesting way to challenge myself to use the limitations of how the chatbox worked but provide
-		a pleseant user experience that allowed chatters to interact more with the stream itself. Twitch's website is, in large part, used to platform playing video games therefore a lot of what I did centered around
+		a pleasant user experience that allowed chatters to interact more with the stream itself. Twitch's website is, in large part, used to platform playing video games therefore a lot of what I did centered around
 		interacting with video games.
 		</p>
 		<img src="../images/twitch/tetris.png" style="width:100%;">
@@ -71,11 +93,11 @@
 		</p>
 		<img src="../images/twitch/fallguys.png" style="width:100%;">
 		<br>
-		<br><p> After allowing the chatters to interact directly with the game, the next challenge that I drafted up was 'what if the chatters can alter the games <em>while</em> I play'. This process was much more involved
+		<br><p>After allowing the chatters to interact directly with the game, the next challenge that I drafted up was 'what if the chatters can alter the games <em>while</em> I play'. This process was much more involved
 		than having the chatters play the game directly. The first game that I thought about doing was the hot topic of the moment, Fall Guys. In Fall Guys, you control a "bean" and race to beat online opponents. Fall Guys ismap
 		a very simple game which allowed me to test out my idea. Fall Guys offers a very basic control scheme, forward, back, left, right, and jump. In the game, you can also control where the camera is looking. With this basic
-		control scheme, I used a similar bot to the Pokemon Yellow bot that accepted basic movement inputs with an additional input of jump and camera movement. Plaing the game proved rather difficult. Rather than previous iterations
-		of the projects where all of the chatters worked <em>with</em> me, they were now working <em>against</em> me. The Fall Guys character would bound around sporatically and randomly jet around left and right. Similarly to the
+		control scheme, I used a similar bot to the Pokemon Yellow bot that accepted basic movement inputs with an additional input of jump and camera movement. Playing the game proved rather difficult. Rather than previous iterations
+		of the projects where all of the chatters worked <em>with</em> me, they were now working <em>against</em> me. The Fall Guys character would bound around sporadically and randomly jet around left and right. Similarly to the
 		previous projects, this was not the most ideal way to play the game, however, it was very entertaining.
 		<br>With the knowledge that the chatters can directly interfere with my gameplay, it was time to take it to the next logical conclusion, Dark Souls. Dark Souls is a game that defined its own genre by creating a universe
 		that was very unfair to the player but, at the same time, incredibly rewarding. I knew that the chat could control my movement, however, I felt that was rather simple given that Dark Souls was more 3D in movement and offered
@@ -117,8 +139,11 @@
         <div class="col-lg-4 col-md-6 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Contact Me</h6>
           <p class="text-muted mb-4">Please feel free follow the icons below to view more material or contact me at mattworby@gmail.com!</p>
-          <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square"></i></button>
-		  <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('github')"><i class="fa fa-github"></i></button>
+          <button id="button-addon1" type="submit" class="btn btn-link siteBtn" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square"></i></button>
+		  <button id="button-addon1" type="submit" class="btn btn-link siteBtn" onclick="changePage('github')"><i class="fa fa-github"></i></button>
+		  
+		  <button id="button-addon1" type="submit" class="btn btn-link mobileBtn" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square fa-lg"></i></button>
+		  <button id="button-addon1" type="submit" class="btn btn-link mobileBtn" onclick="changePage('github')"><i class="fa fa-github  fa-lg"></i></button>
         </div>
       </div>
     </div>

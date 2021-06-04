@@ -53,3 +53,17 @@ a,u{
 	background-position: center;
 	background-size: cover;
 }
+
+@media only screen and (max-width: 600px) {
+	.workRow{
+		flex-direction:column;
+		height:100%;
+	}
+	.workRow a{
+		flex-basis:100%;
+	}
+	.workLink {
+		height:100vh;
+		width:96vw;
+	}
+}

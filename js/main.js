@@ -1,7 +1,7 @@
 function changePage(id){
 	switch (id){
 		case 'resumeNav':
-			window.open('https://mattworby.github.io/portfolio/resume/resume.pdf');
+			window.open('file:///C:/Users/PC%20Master%20Race/Desktop/portfolio/Resume/resume.pdf');
 			break;
 		case 'linkedNav':
 			window.open('https://www.linkedin.com/in/mattworby13a87b123/')
@@ -37,5 +37,24 @@ function showText(item,show){
 				document.getElementById('workEquationText').style.display = 'none';
 			}
 			break;
+	}
+}
+
+function openMobileMenu(){
+	let background = document.getElementById("mobileNav").style.backgroundImage;
+	if (background == 'url("images/mobile/hamburger.png")'){
+		document.getElementById("mobileNav").style.backgroundImage = "url(images/mobile/cross.png)";
+		document.getElementById("mobileNav").style.zIndex = "99";
+		document.getElementById("mobileNavMenu").style.display = "block";
+	} else if (background == 'url("images/mobile/cross.png")'){ 
+		document.getElementById("mobileNav").style.backgroundImage = "url(images/mobile/hamburger.png)";
+		document.getElementById("mobileNavMenu").style.display = "none";
+	} else if (background == 'url("../images/mobile/hamburger.png")'){
+		document.getElementById("mobileNav").style.backgroundImage = "url(../images/mobile/cross.png)";
+		document.getElementById("mobileNav").style.zIndex = "99";
+		document.getElementById("mobileNavMenu").style.display = "block";
+	} else if (background == 'url("../images/mobile/cross.png")'){
+		document.getElementById("mobileNav").style.backgroundImage = "url(../images/mobile/hamburger.png)";
+		document.getElementById("mobileNavMenu").style.display = "none";
 	}
 }

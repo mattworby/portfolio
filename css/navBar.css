@@ -35,6 +35,28 @@ body{
 	color:#0072b1;
 	cursor: pointer;
 }
+#mobileNav{
+	display:none;
+	background-image:url(../images/mobile/hamburger.png);
+}
+#mobileNavMenu{
+	display:none;
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+#innerMobileMenu {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+	font-size:30px;
+}
+#innerMobileMenu div {
+	line-height:60px;
+}
 #linkedNav{
 	display:inline-block;
 	background-image:url(../images/linkedin.png);
@@ -50,6 +72,10 @@ body{
   color: #ffc371;
 }
 
+.mobileBtn{
+		display:none;
+}
+
 i {
   color: #ffc371;
 }
@@ -62,4 +88,25 @@ i {
 
 .form-control.shadow-0:focus {
   box-shadow: none;
+}
+
+@media only screen and (max-width: 600px) {
+	#navItems {
+		display:none;
+	}
+	#mobileNav{
+		display:inline-block;
+		position:absolute;
+		right:2%;
+		top:10px;
+		text-align:right;
+		width:64px;
+		height:64px;
+	}
+	.siteBtn{
+		display:none;
+	}
+	.mobileBtn{
+		display:inline-block;
+	}
 }

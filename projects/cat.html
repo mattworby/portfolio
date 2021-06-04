@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   <title>Matt's Portfolio</title>
   <meta name="description" content="Portfolio">
@@ -19,12 +20,8 @@
 </head>
 
 <body>
-	<div id="navBar">
-		<a href="index.html"><div id="namePlate">
-			<h2>Matt Worby</h2>
-		</div></a>
-		
-		<div id="navItems">
+	<div id="mobileNavMenu">
+		<div id="innerMobileMenu">
 			<a href="../index.html"><div id="homeNav">
 				Home
 			</div></a>
@@ -41,6 +38,30 @@
 			</div>
 		</div>
 	</div>
+	<div id="navBar">
+		<a href="../index.html"><div id="namePlate">
+			<h2>Matt Worby</h2>
+		</div></a>
+		
+		<div id="navItems">
+			<a href="../index.html"><div id="homeNav">
+				Home
+			</div></a>
+			<a href="../workMain.html"><div id="workNav">
+				Work
+			</div></a>
+			<a href="../about.html"><div id="aboutNav">
+				About
+			</div></a>
+			<div id="../resumeNav" onclick="changePage(this.id)">
+				Resume
+			</div>
+			<div id="linkedNav" onclick="changePage(this.id)">
+			</div>
+		</div>
+		<div id="mobileNav" onclick="openMobileMenu()" style="background-image:url(../images/mobile/hamburger.png);">
+		</div>
+	</div>
 	
 	<div id="projectMainBody">
 		<h2>Cat Game</h2>
@@ -51,7 +72,7 @@
 		<br>In order to accomplish such an interesting concept, a lot of various features offered on Twitch needed to be utilized and the game had to be specifically geared to be on this platform. First, let's get
 		into what the game was. Given the platform being a open chatbox to the public, I settled on it being an MMO, or Massive Multiplayer Online game. MMO was the easiest genre to select. The game was to also become
 		an RPG with a lot of the classic elements, tank, healer, and damage-dealer (a.k.a. DPS) with some elements of a clicker/idle game. The latter of the two genres, clicker/idle, was selected due to the nature
-		of how the users would interact with the game. To have, theoretically, an infinite amount of users with thier own character, progression would have to be individualized and tied to tasks they did. This would
+		of how the users would interact with the game. To have, theoretically, an infinite amount of users with their own character, progression would have to be individualized and tied to tasks they did. This would
 		prevent the users from being able to control characters in the traditional up, down, left, right sense. The messages in the chatbox would give the users a point value which they could then use to upgrade their
 		character. Upgrades would be purchased in a small UI designed specifically for Twitch, but that will be elaborated on later. The user was able to select which class (tank, healer, DPS) they wanted to be, level that
 		character, select items off of a skill tree, upgrade equipment, and customize their character. These characters were later established to be cats due to the fact that I have two kittens and have an affinity to cats.
@@ -66,7 +87,7 @@
 		could then choose all of the options they wanted through this little tool.
 		<br>Last, but certainly not least, the main gameplay loop was to be created. Since this was a MMO Idle RPG, the gameplay would be able to be resolved in ticks, or operations based on a timed interval. All of the
 		classes would have separate skills that operated slightly differently and interacted with the main gameplay in their own fashion. The main gameplay would be a broadcast of the website that held all of the characters
-		that were currently in the chat box and they would be faced with a boss character. There was a combined DPS, or damager per second, counter at the top that showed the cumulative damage being done that would slowly take
+		that were currently in the chat box and they would be faced with a boss character. There was a combined DPS, or damage per second, counter at the top that showed the cumulative damage being done that would slowly take
 		down the monster. Unfortunately, this was as far as I got on the project. A lot of time was spent working on the assets and the gameplay loop, but the extensions did not seem to operate individually but only based on the
 		the person broadcasting. I worked hard to try to individualize it for each chatter, but never cracked the code and ultimately dropped the project. I would love to get back to it at some point as I am hopeful that either
 		I missed something or Twitch implemented something to be more individualized.
@@ -102,8 +123,11 @@
         <div class="col-lg-4 col-md-6 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Contact Me</h6>
           <p class="text-muted mb-4">Please feel free follow the icons below to view more material or contact me at mattworby@gmail.com!</p>
-          <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square"></i></button>
-		  <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('github')"><i class="fa fa-github"></i></button>
+          <button id="button-addon1" type="submit" class="btn btn-link siteBtn" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square"></i></button>
+		  <button id="button-addon1" type="submit" class="btn btn-link siteBtn" onclick="changePage('github')"><i class="fa fa-github"></i></button>
+		  
+		  <button id="button-addon1" type="submit" class="btn btn-link mobileBtn" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square fa-lg"></i></button>
+		  <button id="button-addon1" type="submit" class="btn btn-link mobileBtn" onclick="changePage('github')"><i class="fa fa-github  fa-lg"></i></button>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   <title>Matt's Portfolio</title>
   <meta name="description" content="Portfolio">
@@ -21,16 +22,12 @@
 </head>
 
 <body>
-	<div id="navBar">
-		<a href="index.html"><div id="namePlate">
-			<h2>Matt Worby</h2>
-		</div></a>
-		
-		<div id="navItems">
+	<div id="mobileNavMenu">
+		<div id="innerMobileMenu">
 			<a href="index.html"><div id="homeNav">
 				Home
 			</div></a>
-			<a href="#"><div id="workNav">
+			<a href="workMain.html"><div id="workNav">
 				Work
 			</div></a>
 			<a href="about.html"><div id="aboutNav">
@@ -41,6 +38,30 @@
 			</div>
 			<div id="linkedNav" onclick="changePage(this.id)">
 			</div>
+		</div>
+	</div>
+	<div id="navBar">
+		<a href="index.html"><div id="namePlate">
+			<h2>Matt Worby</h2>
+		</div></a>
+		
+		<div id="navItems">
+			<a href="index.html"><div id="homeNav">
+				Home
+			</div></a>
+			<a href="workMain.html"><div id="workNav">
+				Work
+			</div></a>
+			<a href="about.html"><div id="aboutNav">
+				About
+			</div></a>
+			<div id="resumeNav" onclick="changePage(this.id)">
+				Resume
+			</div>
+			<div id="linkedNav" onclick="changePage(this.id)">
+			</div>
+		</div>
+		<div id="mobileNav" onclick="openMobileMenu()" style="background-image:url(images/mobile/hamburger.png);">
 		</div>
 	</div>
 	
@@ -85,8 +106,11 @@
         <div class="col-lg-4 col-md-6 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Contact Me</h6>
           <p class="text-muted mb-4">Please feel free follow the icons below to view more material or contact me at mattworby@gmail.com!</p>
-          <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square"></i></button>
-		  <button id="button-addon1" type="submit" class="btn btn-link" onclick="changePage('github')"><i class="fa fa-github"></i></button>
+          <button id="button-addon1" type="submit" class="btn btn-link siteBtn" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square"></i></button>
+		  <button id="button-addon1" type="submit" class="btn btn-link siteBtn" onclick="changePage('github')"><i class="fa fa-github"></i></button>
+		  
+		  <button id="button-addon1" type="submit" class="btn btn-link mobileBtn" onclick="changePage('linkedNav')"><i class="fa fa-linkedin-square fa-lg"></i></button>
+		  <button id="button-addon1" type="submit" class="btn btn-link mobileBtn" onclick="changePage('github')"><i class="fa fa-github  fa-lg"></i></button>
         </div>
       </div>
     </div>
