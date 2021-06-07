@@ -26,6 +26,7 @@ function showText(item,show){
 
 function openMobileMenu(){
 	var background = document.getElementById("mobileNav").style.backgroundImage;
+	alert(background);
 	if (background == 'url("images/mobile/hamburger.png")'){
 		document.getElementById("mobileNav").style.backgroundImage = "url(images/mobile/cross.png)";
 		document.getElementById("mobileNav").style.zIndex = "99";
