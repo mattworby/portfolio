@@ -26,7 +26,6 @@ function showText(item,show){
 
 function openMobileMenu(){
 	var background = document.getElementById("mobileNav").style.backgroundImage;
-	alert(background);
 	if (background == 'url("images/mobile/hamburger.png")'){
 		document.getElementById("mobileNav").style.backgroundImage = "url(images/mobile/cross.png)";
 		document.getElementById("mobileNav").style.zIndex = "99";
@@ -42,10 +41,10 @@ function openMobileMenu(){
 		document.getElementById("mobileNav").style.backgroundImage = "url(../images/mobile/hamburger.png)";
 		document.getElementById("mobileNavMenu").style.display = "none";
 	} else if (background == 'url("https://mattworby.github.io/portfolio/images/mobile/hamburger.png")'){
-		document.getElementById("mobileNav").style.backgroundImage = "url("https://mattworby.github.io/portfolio/images/mobile/cross.png")";
+		document.getElementById("mobileNav").style.backgroundImage = 'url("https://mattworby.github.io/portfolio/images/mobile/cross.png")';
 		document.getElementById("mobileNavMenu").style.display = "block";
 	} else if (background == 'url("https://mattworby.github.io/portfolio/images/mobile/cross.png")'){
-		document.getElementById("mobileNav").style.backgroundImage = "url("https://mattworby.github.io/portfolio/images/mobile/hamburger.png")";
+		document.getElementById("mobileNav").style.backgroundImage = 'url("https://mattworby.github.io/portfolio/images/mobile/hamburger.png")';
 		document.getElementById("mobileNavMenu").style.display = "none";
 	}
 }
