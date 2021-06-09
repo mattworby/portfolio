@@ -64,31 +64,29 @@
 	<div id="projectMainBody">
 		<h2>Cat Game</h2>
 		<h4><i>Taking Twitch Chat UX Interaction To the Extreme</i></h4>
-		<p>This article is a continuation of the Twitch project <a href="#"><i>here</i></a>. To recap the Twitch project, a series of mods, emulators, chat bots, and manipulating keystrokes allowed me to create a method in which a chatbox, on
-		Twitch's website, can interact with video games directly and indirectly. The Cat Game project is the same priciple but taken to the logical extreme. In the other project, I used pre-existing games to interact with
-		so my next direction involved creating my own video games where the only direct way to play this game was through the chatbox on Twitch. In order to accomplish such an interesting concept, a lot of various features 
+		<p>&emsp;&emsp;This article is a continuation of the Twitch project <a href="twitch.html"><i>here</i></a>. To recap the Twitch project, a series of mods, chat bots, and manipulation of keystrokes allowed me to create a method in which a chatbox can 
+		interact with video games directly and indirectly. The "Cat Game" project is the same priciple but taken to the logical extreme. In the other project, I used pre-existing games to interact with.
+		My next direction involved creating my own video games where the only direct way to play would be through the chatbox. In order to accomplish this, a lot of various features 
 		offered on Twitch needed to be utilized as well as specifically gearing the game to handle this input. 
-		<br>First, let's get into more about the game itself. Given the platform being a open chatbox to the public, I settled on it being an MMO, or Massive Multiplayer Online game. MMO was the easiest genre to select. The game was to also become
-		an RPG with a lot of the classic elements, tank, healer, and damage-dealer (a.k.a. DPS) with some elements of a clicker/idle game. The latter of the two genres, clicker/idle, was selected due to the nature
-		of how the users would interact with the game. To have, theoretically, an infinite amount of users with their own character, progression would have to be individualized and tied to tasks they did. This would
+		<br>&emsp;&emsp;First, let's start with game itself. Given the platform being a open chatbox to the public, I settled on it being an MMO, or Massive Multiplayer Online game. The game was to also going to be
+		an RPG, or Role Playing Game, with a lot of the classic elements: tank, healer, and damage-dealer (a.k.a. DPS). This was to all be coupled with a clicker/idle medium for interaction. The latter of the genres, clicker/idle, was selected due to the limitation
+		in how the users would interact with the game. To have, theoretically, an infinite amount of users with their own character, progression would have to be individualized and tied to tasks the users did. This would
 		prevent the users from being able to control characters in the traditional up, down, left, right sense. The messages in the chatbox would give the users a point value which they could then use to upgrade their
-		character. Upgrades would be purchased in a small UI designed specifically for Twitch, but that will be elaborated on later. The user was able to select which class (tank, healer, DPS) they wanted to be, level that
+		character. Upgrades would be purchased in a small UI designed specifically for Twitch, called a Twitch Extension. In this UI, the user would be able to select which class (tank, healer, DPS) they wanted to be, level that
 		character, select items off of a skill tree, upgrade equipment, and customize their character. These characters were later established to be cats due to the fact that I have two kittens and have an affinity to cats.
 		</p>
 		<img src="../images/catgame/gameplay.png" style="width:100%;">
 		<br>
-		<br>With the basic game logic set, the problem then became how this can be accomplished through the Twitch platform. The basic scoring structure was fairly simple. I set up a database that would keep all of the users
-		based on their user IDs and usernames and tally their scores. There was a chat bot that would accompany this database that would directly run the queries that wrote to the database in batches. I had it run queries in
-		batches at a set interval as I did not want the server to be pinged at an excessive rate. The real challenge, now, was displaying everything to the users. A while ago, Twitch's website released what they called 
+		<br>&emsp;&emsp;With the basic game logic set, the problem then became how this can be accomplished through the Twitch platform. The basic scoring structure was fairly simple. I set up a database that would keep all of the users
+		based on their user IDs and usernames and tally their scores. There was a chat bot that would accompany this database that would directly run the queries that wrote to the database in batches. I programmed it run queries in
+		batches at a set interval since I did not want the server to be pinged too much. The real challenge, now, was displaying everything to the users. Twitch's website released what they called 
 		"extensions" which were placed by the Twitch channel owner for the chatters to use. They would then see a mini website appended to the video player that they can then interact with. This "extension" format was
-		precisely what I was going to use to display the upgrade and customization UI. The extension would read in based on the particular user that was logged into Twitch and display for them their own character. They
+		precisely what I was looking for to display the UI. The extension would read in based on the particular user that was logged into Twitch and display for them their own character. They
 		could then choose all of the options they wanted through this little tool.
-		<br>Last, but certainly not least, the main gameplay loop was to be created. Since this was a MMO Idle RPG, the gameplay would be able to be resolved in ticks, or operations based on a timed interval. All of the
-		classes would have separate skills that operated slightly differently and interacted with the main gameplay in their own fashion. The main gameplay would be a broadcast of the website that held all of the characters
+		<br>&emsp;&emsp;Last, but certainly not least, the main gameplay loop was to be created. Since this was a MMO Idle RPG, the gameplay would be able to be resolved in ticks, or operations based on a timed interval. All of the
+		classes would have separate skills that operated slightly differently and interacted with the main gameplay in their own fashion. The main gameplay would be a broadcast that held all of the characters
 		that were currently in the chat box and they would be faced with a boss character. There was a combined DPS, or damage per second, counter at the top that showed the cumulative damage being done that would slowly take
-		down the monster. Unfortunately, this was as far as I got on the project. A lot of time was spent working on the assets and the gameplay loop, but the extensions did not seem to operate individually but only based on the
-		the person broadcasting. I worked hard to try to individualize it for each chatter, but never cracked the code and ultimately dropped the project. I would love to get back to it at some point as I am hopeful that either
-		I missed something or Twitch implemented something to be more individualized.
+		down the enemy.
 		</p>
 		<img src="../images/catgame/all.png" style="width:100%;">
 	</div>
@@ -120,7 +118,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Contact Me</h6>
-          <p class="text-muted mb-4">Please feel free follow the icons below to view more material or contact me at mattworby@gmail.com!</p>
+          <p class="text-muted mb-4">Please feel free to follow the icons below to view more material or contact me at mattworby@gmail.com!</p>
           <a href="https://www.linkedin.com/in/mattworby13a87b123/" target="_blank"><button id="button-addon1" type="submit" class="btn btn-link siteBtn" ><i class="fa fa-linkedin-square"></i></button></a>
 		  <a href="https://github.com/mattworby" target="_blank"><button id="button-addon1" type="submit" class="btn btn-link siteBtn" ><i class="fa fa-github"></i></button></a>
 		  

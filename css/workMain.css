@@ -40,18 +40,33 @@ a,u{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	border:10px solid white;
 }
 #workMainCat{
 	background-image:url(../images/cat_game.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+	border:10px solid white;
 }
 #workMainEquation{
-	background-image:url(../images/math.jpg);
+	background-image:url(../images/equation/calculatorapp.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
+	border:10px solid white;
+}
+
+#workTwitchText{
+	display:none;
+}
+
+#workCatText{
+	display:none;
+}
+
+#workEquationText{
+	display:none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -65,5 +80,23 @@ a,u{
 	.workLink {
 		height:100vh;
 		width:96vw;
+	}
+	.workRow > a{
+		opacity:.5;
+	}
+	#workTwitchText{
+		display:block !important;;
+	}
+	#workCatText{
+		display:block !important;;
+	}
+	#workEquationText{
+		display:block !important;
+	}
+	#workMainCat{
+		margin-top:10px;
+	}
+	#workMainEquation{
+		margin-top:10px;
 	}
 }

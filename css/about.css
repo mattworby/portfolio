@@ -21,7 +21,7 @@
 	background-image:url("../images/headshot.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	float:right;
+	background-position:center;
 }
 #aboutText h2{
 	margin:10%;
