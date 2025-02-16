@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+  }
+}
+
+@layer components {
+  .arcade-screen {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #sky {
+    background-image: url('/sky.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 512px;
+    height: 512px;
+    top: -3vh;
+    left: 30vw;
+    z-index: -2;
+  }
+
+  #lightning {
+    background-image: url('/sky.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 512px;
+    height: 512px;
+    top: -3vh;
+    left: 30vw;
+    -webkit-filter: brightness(5);
+    filter: brightness(5);
+    -o-filter: brightness(5);
+    -moz-filter: brightness(5);
+    z-index: -1;
+  }
+
+  #background {
+    background-image: url('/stairs2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .arcade-screen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(0deg,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 2px);
+    pointer-events: none;
+  }
+
+  .neon-text {
+    text-shadow: 0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #0ff,
+      0 0 30px #0ff,
+      0 0 40px #0ff;
+  }
+
+  .pixel-border {
+    box-shadow: 0 0 0 2px #fff,
+      0 0 0 4px #0ff;
+  }
+
+  .flashit {
+    -webkit-animation: flash ease-out 7s infinite;
+    -moz-animation: flash ease-out 7s infinite;
+    animation: flash ease-out 7s infinite;
+    animation-delay: 2s;
+  }
+
+  @-webkit-keyframes flash {
+    from {
+      opacity: 0;
+    }
+
+    92% {
+      opacity: 0;
+    }
+
+    93% {
+      opacity: 0.6;
+    }
+
+    94% {
+      opacity: 0.2;
+    }
+
+    96% {
+      opacity: 0.9;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes flash {
+    from {
+      opacity: 0;
+    }
+
+    92% {
+      opacity: 0;
+    }
+
+    93% {
+      opacity: 0.6;
+    }
+
+    94% {
+      opacity: 0.2;
+    }
+
+    96% {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+}
