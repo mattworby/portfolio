@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 
-const HomeBackground = () => {
+const AboutBackground = () => {
 
     return (
         <div>
@@ -12,4 +12,4 @@ const HomeBackground = () => {
     );
 };
 
-export default HomeBackground;
+export default AboutBackground;

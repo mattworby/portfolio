@@ -50,6 +50,22 @@
     background-repeat: no-repeat;
   }
 
+  #projectBackground {
+    background-image: url('/bookcase.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  #aboutBackground {
+    background-image: url('/stairs2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
   .arcade-screen::before {
     content: "";
     position: absolute;
