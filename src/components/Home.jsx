@@ -46,16 +46,16 @@ const Home = ({ onData }) => {
                     </button>
                 </div>
                 <div className="flex justify-center gap-8">
-                    <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                    <a href="https://github.com/mattworby" target="_blank" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                         <Github size={20} />
                     </a>
-                    <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                    <a href="https://www.linkedin.com/in/mattworby13a87b123" target="_blank" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                         <Linkedin size={20} />
                     </a>
                     <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                         <Mail size={20} />
                     </a>
-                    <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                    <a href="public\worby-resume.pdf" download="matt-worby-resume.pdf" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                         <FileText size={20} />
                     </a>
                 </div>
