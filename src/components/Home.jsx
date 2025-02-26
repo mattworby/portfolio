@@ -40,7 +40,7 @@ const Home = ({ onData }) => {
                 <div className="flex justify-center gap-6 mb-8">
                     <button
                         className={`bg-white-600 hover:bg-gray-900 text-white px-8 py-2 rounded pixel-border`}
-                        onClick={() => onData(100, 'contact')}
+                        onClick={() => onData(100, 'contactme')}
                     >
                         CONTACT ME
                     </button>

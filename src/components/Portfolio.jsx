@@ -2,9 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
+import ContactMe from './ContactMe'
 import HomeBackground from './backgrounds/HomeBackground'
 import AboutBackground from './backgrounds/AboutBackground'
 import ProjectsBackground from './backgrounds/ProjectsBackground'
+import ContactMeBackground from './backgrounds/ContactMeBackground'
 
 const Portfolio = () => {
     const [score, setDataFromChild] = React.useState(0);
@@ -49,6 +51,9 @@ const Portfolio = () => {
         } else if (screenState == 'projects') {
             if (isBackground) return <ProjectsBackground />
             else return <Projects />
+        } else if (screenState == 'contactme') {
+            if (isBackground) return <ContactMeBackground />
+            else return <ContactMe />
         }
     }
 
