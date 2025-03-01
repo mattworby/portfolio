@@ -25,7 +25,7 @@ const Portfolio = () => {
     };
 
     useEffect(() => {
-        handleSetCurrentScreen('home');
+        handleSetCurrentScreen('Home');
 
         const cdnScript = document.createElement('script');
         cdnScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js';
@@ -45,27 +45,42 @@ const Portfolio = () => {
     }, []); // Empty dependency array ensures this runs only once
 
     const setScreenState = (screenState, isBackground) => {
-        if (screenState == 'home') {
-            isHome = true;
-            if (isBackground) return <HomeBackground />
-            else return <Home onData={handleScoreSetFromChild} />
-        } else if (screenState == 'about') {
-            isHome = false;
-            if (isBackground) return <AboutBackground />
-            else return <About />
-        } else if (screenState == 'projects') {
-            isHome = false;
-            if (isBackground) return <ProjectsBackground />
-            else return <Projects />
-        } else if (screenState == 'contactme') {
-            isHome = false;
-            if (isBackground) return <ContactMeBackground />
-            else return <ContactMe />
+        // Update isHome flag
+        isHome = screenState === 'Home';
+
+        // Define a mapping of screen names to their components
+        const componentMap = {
+            'Home': Home,
+            'About': About,
+            'Projects': Projects,
+            'ContactMe': ContactMe
+        };
+
+        // Define a mapping of screen names to their background components
+        const backgroundMap = {
+            'Home': HomeBackground,
+            'About': AboutBackground,
+            'Projects': ProjectsBackground,
+            'ContactMe': ContactMeBackground
+        };
+
+        // Get the appropriate component based on screen name and background flag
+        const Component = isBackground ? backgroundMap[screenState] : componentMap[screenState];
+
+        // If component doesn't exist, log an error and return null
+        if (!Component) {
+            console.error(`Component for screen "${screenState}" ${isBackground ? 'background' : ''} not found`);
+            return null;
         }
-    }
+
+        // Return the component with appropriate props
+        return screenState === 'Home' && !isBackground ?
+            <Component onData={handleScoreSetFromChild} /> :
+            <Component />;
+    };
 
     const handleBackClick = () => {
-        handleSetCurrentScreen('home');
+        handleSetCurrentScreen('Home');
     };
 
     return (

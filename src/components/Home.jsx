@@ -24,7 +24,7 @@ const Home = ({ onData }) => {
                 <div className="flex justify-center gap-6 mb-8">
                     <button
                         className={`bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded pixel-border ${blinkingText ? 'opacity-100' : 'opacity-50'}`}
-                        onClick={() => onData(100, 'projects')}
+                        onClick={() => onData(100, 'Projects')}
                     >
                         VIEW QUESTS
                     </button>
@@ -32,7 +32,7 @@ const Home = ({ onData }) => {
                 <div className="flex justify-center gap-6 mb-8">
                     <button
                         className={`bg-black-600 hover:bg-gray-700 text-white px-12 py-2 rounded pixel-border `}
-                        onClick={() => onData(100, 'about')}
+                        onClick={() => onData(100, 'About')}
                     >
                         ABOUT ME
                     </button>
@@ -40,7 +40,7 @@ const Home = ({ onData }) => {
                 <div className="flex justify-center gap-6 mb-8">
                     <button
                         className={`bg-white-600 hover:bg-gray-900 text-white px-8 py-2 rounded pixel-border`}
-                        onClick={() => onData(100, 'contactme')}
+                        onClick={() => onData(100, 'ContactMe')}
                     >
                         CONTACT ME
                     </button>

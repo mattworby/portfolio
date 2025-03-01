@@ -42,29 +42,29 @@ const HamburgerMenu = ({ onNavigate, currentScreen }) => {
                 <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-gray-800 ring-1 ring-black ring-opacity-5">
                     <div className="py-1" role="menu" aria-orientation="vertical">
                         <button
-                            onClick={() => handleNavigation('home')}
-                            className={`${currentScreen === 'home' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
+                            onClick={() => handleNavigation('Home')}
+                            className={`${currentScreen === 'Home' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
                             role="menuitem"
                         >
                             Home
                         </button>
                         <button
-                            onClick={() => handleNavigation('projects')}
-                            className={`${currentScreen === 'projects' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
+                            onClick={() => handleNavigation('Projects')}
+                            className={`${currentScreen === 'Projects' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
                             role="menuitem"
                         >
                             Projects
                         </button>
                         <button
-                            onClick={() => handleNavigation('about')}
-                            className={`${currentScreen === 'about' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
+                            onClick={() => handleNavigation('About')}
+                            className={`${currentScreen === 'About' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
                             role="menuitem"
                         >
                             About Me
                         </button>
                         <button
-                            onClick={() => handleNavigation('contactme')}
-                            className={`${currentScreen === 'contactme' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
+                            onClick={() => handleNavigation('Contactme')}
+                            className={`${currentScreen === 'Contactme' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
                             role="menuitem"
                         >
                             Contact Me
