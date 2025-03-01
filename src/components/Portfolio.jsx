@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
@@ -7,10 +7,13 @@ import HomeBackground from './backgrounds/HomeBackground'
 import AboutBackground from './backgrounds/AboutBackground'
 import ProjectsBackground from './backgrounds/ProjectsBackground'
 import ContactMeBackground from './backgrounds/ContactMeBackground'
+import HamburgerMenu from '../common/hamburger';
+import { ArrowLeft } from 'lucide-react';
 
 const Portfolio = () => {
     const [score, setDataFromChild] = React.useState(0);
     let [screen, setCurrentScreen] = React.useState(0);
+    let isHome = true;
 
     const handleScoreSetFromChild = (data, screen) => {
         handleSetCurrentScreen(screen);
@@ -43,19 +46,27 @@ const Portfolio = () => {
 
     const setScreenState = (screenState, isBackground) => {
         if (screenState == 'home') {
+            isHome = true;
             if (isBackground) return <HomeBackground />
             else return <Home onData={handleScoreSetFromChild} />
         } else if (screenState == 'about') {
+            isHome = false;
             if (isBackground) return <AboutBackground />
             else return <About />
         } else if (screenState == 'projects') {
+            isHome = false;
             if (isBackground) return <ProjectsBackground />
             else return <Projects />
         } else if (screenState == 'contactme') {
+            isHome = false;
             if (isBackground) return <ContactMeBackground />
             else return <ContactMe />
         }
     }
+
+    const handleBackClick = () => {
+        handleSetCurrentScreen('home');
+    };
 
     return (
         <div id='screen'>
@@ -77,6 +88,20 @@ const Portfolio = () => {
                 </div>
                 {setScreenState(screen, 0)}
             </div>
+
+            <HamburgerMenu
+                onNavigate={handleSetCurrentScreen}
+                currentScreen={screen}
+            />
+
+            <button
+                id="backButton"
+                onClick={handleBackClick}
+                className={`${isHome ? 'invisible' : 'visible'} absolute top-8 left-8 p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500`}
+                aria-label="Go back"
+            >
+                <ArrowLeft className="h-6 w-6" />
+            </button>
         </div >
     );
 };

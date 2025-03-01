@@ -10,7 +10,7 @@ const Home = ({ onData }) => {
             setBlinkingText(prev => !prev);
         }, 800);
         return () => clearInterval(interval);
-    }, []); 4
+    }, []);
 
     return (
         < div className="flex-1 flex flex-col items-center justify-center text-center px-4 pt-16 pb-8" >
