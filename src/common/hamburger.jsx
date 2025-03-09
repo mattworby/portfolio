@@ -63,8 +63,8 @@ const HamburgerMenu = ({ onNavigate, currentScreen }) => {
                             About Me
                         </button>
                         <button
-                            onClick={() => handleNavigation('Contactme')}
-                            className={`${currentScreen === 'Contactme' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
+                            onClick={() => handleNavigation('ContactMe')}
+                            className={`${currentScreen === 'ContactMe' ? 'bg-gray-700' : ''} text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 transition-colors`}
                             role="menuitem"
                         >
                             Contact Me
