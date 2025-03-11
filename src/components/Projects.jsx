@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Projects = () => {
     const [score, setScore] = useState(0);
@@ -10,6 +10,11 @@ const Projects = () => {
         height: window.innerHeight
     });
 
+    // Pagination state (for mobile)
+    const [currentPage, setCurrentPage] = useState(0);
+    const projectsPerPage = 1; // Show one project per page on mobile
+    const isMobile = windowSize.width < 640;
+
     // Handle window resize to update layout
     useEffect(() => {
         const handleResize = () => {
@@ -17,11 +22,16 @@ const Projects = () => {
                 width: window.innerWidth,
                 height: window.innerHeight
             });
+
+            // Reset to first page when switching between mobile/desktop
+            if ((window.innerWidth < 640) !== isMobile) {
+                setCurrentPage(0);
+            }
         };
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    }, [isMobile]);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -105,12 +115,18 @@ const Projects = () => {
         }
     ];
 
+    // Calculate pagination values
+    const totalPages = Math.ceil(projects.length / projectsPerPage);
+    const paginatedProjects = isMobile
+        ? projects.slice(currentPage * projectsPerPage, (currentPage + 1) * projectsPerPage)
+        : projects;
+
     // Determine grid layout based on window size
     const getGridLayout = () => {
         // Reserve space for navigation & header (adjust as needed)
         const topNavHeight = 70; // Space for menu and back button
         const headerHeight = 60; // Space for Projects header
-        const bottomPadding = 20; // Bottom padding
+        const bottomPadding = isMobile ? 100 : 20; // Extra padding for pagination controls on mobile
 
         // Calculate available height for grid
         const availableHeight = windowSize.height - topNavHeight - headerHeight - bottomPadding;
@@ -120,8 +136,9 @@ const Projects = () => {
         if (windowSize.width < 1024) columns = 2;
         if (windowSize.width < 640) columns = 1;
 
-        // Calculate rows needed
-        const rows = Math.ceil(projects.length / columns);
+        // Calculate rows needed for visible projects
+        const visibleProjects = isMobile ? paginatedProjects.length : projects.length;
+        const rows = Math.ceil(visibleProjects / columns);
 
         // Calculate ideal tile height with spacing
         const gapSize = 16; // 1rem gap between tiles
@@ -144,17 +161,28 @@ const Projects = () => {
         setSelectedProject(project);
     };
 
+    const handlePrevPage = () => {
+        setCurrentPage(prev => (prev > 0 ? prev - 1 : totalPages - 1));
+    };
+
+    const handleNextPage = () => {
+        setCurrentPage(prev => (prev < totalPages - 1 ? prev + 1 : 0));
+    };
+
     return (
         <div id='screen' className="h-screen w-full overflow-hidden">
             {/* Top space for navigation */}
             <div className="h-16"></div>
 
             <div className="px-4 pb-4 h-full overflow-hidden">
-                <div className="grid gap-4" style={{
-                    gridTemplateColumns: `repeat(${columns}, 1fr)`,
-                    height: 'calc(100% - 60px)'
-                }}>
-                    {projects.map((project) => (
+                <div
+                    className="grid gap-4"
+                    style={{
+                        gridTemplateColumns: `repeat(${columns}, 1fr)`,
+                        height: isMobile ? 'calc(100% - 120px)' : 'calc(100% - 60px)' // Adjust for pagination controls
+                    }}
+                >
+                    {paginatedProjects.map((project) => (
                         <div
                             key={project.id}
                             className="rounded overflow-hidden shadow cursor-pointer border border-gray-700 hover:border-gray-400 flex flex-col backdrop-blur-sm transition-all duration-300 hover:backdrop-blur-none"
@@ -217,6 +245,31 @@ const Projects = () => {
                         </div>
                     ))}
                 </div>
+
+                {/* Pagination controls - only shown on mobile */}
+                {isMobile && (
+                    <div className="fixed bottom-0 left-0 right-0 flex justify-between items-center p-4 bg-gray-900 bg-opacity-80 border-t border-gray-700">
+                        <button
+                            onClick={handlePrevPage}
+                            className="flex items-center justify-center w-16 h-16 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-200 active:bg-gray-600 touch-manipulation"
+                            aria-label="Previous project"
+                        >
+                            <ChevronLeft size={28} />
+                        </button>
+
+                        <div className="text-gray-200 text-base font-medium">
+                            {currentPage + 1} / {totalPages}
+                        </div>
+
+                        <button
+                            onClick={handleNextPage}
+                            className="flex items-center justify-center w-16 h-16 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-200 active:bg-gray-600 touch-manipulation"
+                            aria-label="Next project"
+                        >
+                            <ChevronRight size={28} />
+                        </button>
+                    </div>
+                )}
             </div>
 
             {selectedProject && (

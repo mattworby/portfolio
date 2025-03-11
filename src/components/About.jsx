@@ -41,19 +41,19 @@ const About = () => {
                     <div className="md:hidden grid grid-cols-2 gap-x-4 gap-y-2 mb-4">
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">CLASS:</h3>
-                            <p className="text-cyan-400 text-xs">Full-Stack Developer</p>
+                            <p className="text-cyan-400 text-xs text-right">Full-Stack Developer</p>
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">LEVEL:</h3>
-                            <p className="text-cyan-400 text-xs">30</p>
+                            <p className="text-cyan-400 text-xs text-right">30</p>
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">EXP:</h3>
-                            <p className="text-cyan-400 text-xs">8+ Years</p>
+                            <p className="text-cyan-400 text-xs text-right">8+ Years</p>
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">LOCATION:</h3>
-                            <p className="text-cyan-400 text-xs">New York, USA</p>
+                            <p className="text-cyan-400 text-xs text-right">New York, USA</p>
                         </div>
                     </div>
 
