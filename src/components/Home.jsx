@@ -55,7 +55,7 @@ const Home = ({ onData }) => {
                     <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                         <Mail size={20} />
                     </a>
-                    <a href="public\worby-resume.pdf" download="matt-worby-resume.pdf" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                    <a href="public\matt-resume.pdf" download="matt-worby-resume.pdf" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                         <FileText size={20} />
                     </a>
                 </div>
