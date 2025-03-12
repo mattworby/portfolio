@@ -87,20 +87,7 @@ const Portfolio = () => {
         <div id='screen'>
             {setScreenState(screen, 1)}
             <div className="min-h-screen flex flex-col arcade-screen p-4">
-                <div className="flex justify-evenly">
-                    {/* Score Display */}
-                    <div className="flex flex-col text-yellow-400 text-sm">
-                        INSERT COIN 0/1
-                    </div>
-                    {/* Score Display */}
-                    <div className="flex flex-col text-yellow-400 text-sm">
-                        HIGH SCORE: 156235
-                    </div>
-                    {/* Score Display */}
-                    <div className="flex flex-col text-yellow-400 text-sm">
-                        SCORE: {score}
-                    </div>
-                </div>
+
                 {setScreenState(screen, 0)}
             </div>
 

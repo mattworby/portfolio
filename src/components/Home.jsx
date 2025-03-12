@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 
 const Home = ({ onData }) => {
-    const [score, setScore] = useState(0);
     const [blinkingText, setBlinkingText] = useState(true);
 
     useEffect(() => {
@@ -23,10 +22,10 @@ const Home = ({ onData }) => {
                 </h2>
                 <div className="flex justify-center gap-6 mb-8">
                     <button
-                        className={`bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded pixel-border ${blinkingText ? 'opacity-100' : 'opacity-50'}`}
+                        className={`bg-red-600 hover:bg-red-700 text-white px-12 py-2 rounded pixel-border ${blinkingText ? 'opacity-100' : 'opacity-50'}`}
                         onClick={() => onData(100, 'Projects')}
                     >
-                        VIEW QUESTS
+                        PROJECTS
                     </button>
                 </div>
                 <div className="flex justify-center gap-6 mb-8">
@@ -51,9 +50,6 @@ const Home = ({ onData }) => {
                     </a>
                     <a href="https://www.linkedin.com/in/mattworby13a87b123" target="_blank" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                         <Linkedin size={20} />
-                    </a>
-                    <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                        <Mail size={20} />
                     </a>
                     <a href="/portfolio/matt-resume.pdf" download="matt-worby-resume.pdf" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                         <FileText size={20} />
