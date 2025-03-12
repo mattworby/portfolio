@@ -112,17 +112,6 @@ const ContactMe = () => {
                             <Mail size={18} className="mr-2" />
                             mattworby@gmail.com
                         </a>
-                        <div className="flex justify-center gap-8 mt-2">
-                            <a href="https://github.com/mattworby" target="_blank" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                                <Github size={20} />
-                            </a>
-                            <a href="https://www.linkedin.com/in/mattworby13a87b123" target="_blank" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                                <Linkedin size={20} />
-                            </a>
-                            <a href="/portfolio/matt-resume.pdf" download="matt-worby-resume.pdf" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                                <FileText size={20} />
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
