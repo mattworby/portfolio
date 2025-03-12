@@ -33,7 +33,7 @@ const About = () => {
                         </div>
                         <div className="flex flex-col">
                             <h3 className="text-yellow-400 mb-2">LOCATION</h3>
-                            <p className="text-cyan-400">New York, USA</p>
+                            <p className="text-cyan-400">St. Louis, MO</p>
                         </div>
                     </div>
 
@@ -53,7 +53,7 @@ const About = () => {
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">LOCATION:</h3>
-                            <p className="text-cyan-400 text-xs text-right">New York, USA</p>
+                            <p className="text-cyan-400 text-xs text-right">St. Louis, MO</p>
                         </div>
                     </div>
 
