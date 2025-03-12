@@ -119,7 +119,7 @@ const ContactMe = () => {
                             <a href="https://www.linkedin.com/in/mattworby13a87b123" target="_blank" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="public\matt-resume.pdf" download="matt-worby-resume.pdf" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                            <a href="/portfolio/matt-resume.pdf" download="matt-worby-resume.pdf" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                                 <FileText size={20} />
                             </a>
                         </div>
