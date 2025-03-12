@@ -47,7 +47,7 @@ const Projects = () => {
         document.body.appendChild(cdnScript);
 
         const script = document.createElement('script');
-        script.src = './src/effects/crt.js';
+        script.src = '/portfolio/src/effects/crt.js';
         script.async = true;
         document.body.appendChild(script);
 

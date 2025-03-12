@@ -167,7 +167,7 @@ const About = () => {
                 </div>
 
                 <a
-                    href="public\matt-resume.pdf"
+                    href="/portfolio/matt-resume.pdf"
                     download
                     className={`inline-flex items-center justify-center bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded pixel-border ${blinkingText ? 'opacity-100' : 'opacity-50'}`}
                 >
