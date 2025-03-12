@@ -23,8 +23,10 @@
     background-size: contain;
     width: 512px;
     height: 512px;
-    top: -3vh;
-    left: 30vw;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -2;
   }
 
@@ -34,12 +36,11 @@
     background-size: contain;
     width: 512px;
     height: 512px;
-    top: -3vh;
-    left: 30vw;
-    -webkit-filter: brightness(5);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
     filter: brightness(5);
-    -o-filter: brightness(5);
-    -moz-filter: brightness(5);
     z-index: -1;
   }
 
