@@ -33,7 +33,7 @@ const Portfolio = () => {
         document.body.appendChild(cdnScript);
 
         const script = document.createElement('script');
-        script.src = '/portfolio/src/effects/crt.js';
+        script.src = '/portfolio/effects/crt.js';
         script.async = true; // Ensures the script is loaded asynchronously
         document.body.appendChild(script);
 
