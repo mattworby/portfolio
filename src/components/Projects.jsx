@@ -63,7 +63,7 @@ const Projects = () => {
             id: 1,
             title: "Portfolio Website",
             description: "Built Utilizing Various Artificial Intelligence To Learn How To Incorperate AI Into My Workflow",
-            image: "/public/portfolio_website.png",
+            image: "/portfolio_website.png",
             github: "https://github.com/mattworby/portfolio",
             demo: "https://example.com/demo",
             tech: ["React", "Tailwind"]
@@ -72,7 +72,7 @@ const Projects = () => {
             id: 2,
             title: "ARPG Game",
             description: "Current Project! Learning How To Build a 2D Game Using Godot",
-            image: "/public/arpg_game.png",
+            image: "/arpg_game.png",
             github: "https://github.com/mattworby/arpg_game",
             tech: ["Godot"]
         },
@@ -80,7 +80,7 @@ const Projects = () => {
             id: 3,
             title: "Discord Chat Bot",
             description: "Chatbot with basic commands for Discord servers",
-            image: "/public/skaterbot.png",
+            image: "skaterbot.png",
             github: "https://github.com/mattworby/Skaterbot-2.0",
             tech: ["NodeJS"]
         },
@@ -88,7 +88,7 @@ const Projects = () => {
             id: 4,
             title: "Twitch Chat Bot",
             description: "Chat Interactivity With Games On Stream Via a Chat Bot",
-            image: "/public/tetris.png",
+            image: "tetris.png",
             github: "https://github.com/mattworby/TwitchBot",
             tech: ["NodeJS", "HTML", "CSS", "JavaScript"]
         },
@@ -96,7 +96,7 @@ const Projects = () => {
             id: 5,
             title: "Unfinished Cat Game",
             description: "Using the Concepts From the Twitch Chat Bot, Built a Game Using NodeJS",
-            image: "/public/all.png",
+            image: "all.png",
             github: "https://github.com/mattworby/cat_game",
             tech: ["NodeJS", "HTML", "CSS", "JavaScript"]
         },
@@ -104,7 +104,7 @@ const Projects = () => {
             id: 6,
             title: "Equation Calculator",
             description: "Calculator Android App in Android Studio built when I was 19",
-            image: "/public/calculatorapp.png",
+            image: "calculatorapp.png",
             tech: ["Java", "XML", "Android Studio"]
         },
     ];
