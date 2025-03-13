@@ -61,58 +61,52 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: "E-Commerce",
-            description: "Full-stack shop with React",
-            image: "/api/placeholder/300/200",
-            github: "https://github.com/username/ecommerce",
+            title: "Portfolio Website",
+            description: "Built Utilizing Various Artificial Intelligence To Learn How To Incorperate AI Into My Workflow",
+            image: "/public/portfolio_website.png",
+            github: "https://github.com/mattworby/portfolio",
             demo: "https://example.com/demo",
-            tech: ["React", "Node.js"]
+            tech: ["React", "Tailwind"]
         },
         {
             id: 2,
-            title: "AI Generator",
-            description: "ML-powered image creator",
-            image: "/api/placeholder/300/200",
-            github: "https://github.com/username/ai-image-gen",
-            demo: "https://example.com/demo",
-            tech: ["Python", "React"]
+            title: "ARPG Game",
+            description: "Current Project! Learning How To Build a 2D Game Using Godot",
+            image: "/public/arpg_game.png",
+            github: "https://github.com/mattworby/arpg_game",
+            tech: ["Godot"]
         },
         {
             id: 3,
-            title: "Budget App",
-            description: "Personal finance tracker",
-            image: "/api/placeholder/300/200",
-            github: "https://github.com/username/budget-app",
-            demo: "https://example.com/demo",
-            tech: ["React", "Firebase"]
+            title: "Discord Chat Bot",
+            description: "Chatbot with basic commands for Discord servers",
+            image: "/public/skaterbot.png",
+            github: "https://github.com/mattworby/Skaterbot-2.0",
+            tech: ["NodeJS"]
         },
         {
             id: 4,
-            title: "Weather App",
-            description: "Real-time forecasts",
-            image: "/api/placeholder/300/200",
-            github: "https://github.com/username/weather-app",
-            demo: "https://example.com/demo",
-            tech: ["JavaScript", "API"]
+            title: "Twitch Chat Bot",
+            description: "Chat Interactivity With Games On Stream Via a Chat Bot",
+            image: "/public/tetris.png",
+            github: "https://github.com/mattworby/TwitchBot",
+            tech: ["NodeJS", "HTML", "CSS", "JavaScript"]
         },
         {
             id: 5,
-            title: "Social Media",
-            description: "Connect & share platform",
-            image: "/api/placeholder/300/200",
-            github: "https://github.com/username/social-media",
-            demo: "https://example.com/demo",
-            tech: ["React", "Firebase"]
+            title: "Unfinished Cat Game",
+            description: "Using the Concepts From the Twitch Chat Bot, Built a Game Using NodeJS",
+            image: "/public/all.png",
+            github: "https://github.com/mattworby/cat_game",
+            tech: ["NodeJS", "HTML", "CSS", "JavaScript"]
         },
         {
             id: 6,
-            title: "Portfolio",
-            description: "Developer showcase",
-            image: "/api/placeholder/300/200",
-            github: "https://github.com/username/portfolio",
-            demo: "https://example.com/demo",
-            tech: ["React", "Tailwind"]
-        }
+            title: "Equation Calculator",
+            description: "Calculator Android App in Android Studio built when I was 19",
+            image: "/public/calculatorapp.png",
+            tech: ["Java", "XML", "Android Studio"]
+        },
     ];
 
     // Calculate pagination values
