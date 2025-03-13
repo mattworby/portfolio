@@ -29,7 +29,7 @@ const About = () => {
                         </div>
                         <div className="flex flex-col">
                             <h3 className="text-yellow-400 mb-2">EXP</h3>
-                            <p className="text-cyan-400">8+ Years</p>
+                            <p className="text-cyan-400">9+ Years</p>
                         </div>
                         <div className="flex flex-col">
                             <h3 className="text-yellow-400 mb-2">LOCATION</h3>
@@ -49,101 +49,101 @@ const About = () => {
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">EXP:</h3>
-                            <p className="text-cyan-400 text-xs text-right ml-1">8+ Years</p>
+                            <p className="text-cyan-400 text-xs text-right ml-1">9+ Years</p>
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">LOCATION:</h3>
                             <p className="text-cyan-400 text-xs text-right ml-1">St. Louis, MO</p>
                         </div>
                     </div>
+                </div>
 
-                    <div className="mb-4">
-                        <h3 className="text-yellow-400 mb-1 text-sm md:text-base">SKILLS</h3>
-                        {/* Desktop skills */}
-                        <div className="hidden md:grid md:grid-cols-2 gap-2 mb-6">
-                            <div className="flex items-center">
-                                <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '90%' }}></div>
-                                </div>
-                                <span className="text-white text-sm">React</span>
+                <div className="mb-4">
+                    <h3 className="text-yellow-400 mb-1 text-sm md:text-base">SKILLS</h3>
+                    {/* Desktop skills */}
+                    <div className="hidden md:grid md:grid-cols-2 gap-2 mb-6">
+                        <div className="flex items-center">
+                            <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '90%' }}></div>
                             </div>
-                            <div className="flex items-center">
-                                <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
-                                </div>
-                                <span className="text-white text-sm">Node.js</span>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '80%' }}></div>
-                                </div>
-                                <span className="text-white text-sm">TypeScript</span>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '75%' }}></div>
-                                </div>
-                                <span className="text-white text-sm">MongoDB</span>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
-                                </div>
-                                <span className="text-white text-sm">CSS/Tailwind</span>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '70%' }}></div>
-                                </div>
-                                <span className="text-white text-sm">AWS</span>
-                            </div>
+                            <span className="text-white text-sm">JavaScript</span>
                         </div>
+                        <div className="flex items-center">
+                            <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
+                            </div>
+                            <span className="text-white text-sm">Python</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '80%' }}></div>
+                            </div>
+                            <span className="text-white text-sm">ReactJS</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
+                            </div>
+                            <span className="text-white text-sm">TypeScript</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '80%' }}></div>
+                            </div>
+                            <span className="text-white text-sm">AWS</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-16 h-4 bg-gray-700 rounded-full mr-2">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '75%' }}></div>
+                            </div>
+                            <span className="text-white text-sm">MySQL</span>
+                        </div>
+                    </div>
 
-                        {/* Mobile compressed skills */}
-                        <div className="md:hidden grid grid-cols-1 xs:grid-cols-2 gap-1">
-                            <div className="flex items-center">
-                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '90%' }}></div>
-                                </div>
-                                <span className="text-white text-xs">React</span>
+                    {/* Mobile compressed skills */}
+                    <div className="md:hidden grid grid-cols-1 xs:grid-cols-2 gap-1">
+                        <div className="flex items-center">
+                            <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '90%' }}></div>
                             </div>
-                            <div className="flex items-center">
-                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
-                                </div>
-                                <span className="text-white text-xs">Node.js</span>
+                            <span className="text-white text-xs">JavaScript</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
                             </div>
-                            <div className="flex items-center">
-                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '80%' }}></div>
-                                </div>
-                                <span className="text-white text-xs">TypeScript</span>
+                            <span className="text-white text-xs">Python</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '80%' }}></div>
                             </div>
-                            <div className="flex items-center">
-                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '75%' }}></div>
-                                </div>
-                                <span className="text-white text-xs">MongoDB</span>
+                            <span className="text-white text-xs">ReactJS</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
                             </div>
-                            <div className="flex items-center">
-                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
-                                </div>
-                                <span className="text-white text-xs">CSS/Tailwind</span>
+                            <span className="text-white text-xs">TypeScript</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '80%' }}></div>
                             </div>
-                            <div className="flex items-center">
-                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
-                                    <div className="h-full bg-green-500 rounded-full" style={{ width: '70%' }}></div>
-                                </div>
-                                <span className="text-white text-xs">AWS</span>
+                            <span className="text-white text-xs">AWS</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="h-full bg-green-500 rounded-full" style={{ width: '75%' }}></div>
                             </div>
+                            <span className="text-white text-xs">MySQL</span>
                         </div>
                     </div>
 
                     {/* Bio section - more compact on mobile */}
                     <div className="mb-4">
                         <h3 className="text-yellow-400 mb-1 text-sm md:text-base">CHARACTER BIO</h3>
-                        <p className="text-white text-xs md:text-sm leading-tight md:leading-relaxed">
+                        <p className="text-white text-xs md:text-sm leading-tight md:leading-relaxed text-left">
                             Dedicated software engineer with a strong passion for prompt engineering and developing robust software solutions.
                         </p>
                     </div>
@@ -152,13 +152,13 @@ const About = () => {
                     <div>
                         <h3 className="text-yellow-400 mb-1 text-sm md:text-base">QUEST HISTORY</h3>
                         {/* Desktop quest history */}
-                        <ul className="hidden md:block text-white text-sm leading-relaxed">
+                        <ul className="hidden md:block text-left text-white text-sm leading-relaxed">
                             <li className="mb-2">- Senior Software Engineer at Lumeris, Inc. (2021-Present)</li>
                             <li className="mb-2">- Data Analyst at Applied Systems (2018-2021)</li>
                             <li className="mb-2">- Programmer I at Kankakee Community College (2016-2018)</li>
                         </ul>
                         {/* Mobile compressed quest history */}
-                        <ul className="md:hidden text-white text-xs leading-tight">
+                        <ul className="md:hidden text-white text-xs leading-tight text-left">
                             <li className="mb-1">- Sr. Software Engineer, Lumeris (2021-Present)</li>
                             <li className="mb-1">- Data Analyst, Applied Systems (2018-2021)</li>
                             <li className="mb-1">- Programmer I, KCC (2016-2018)</li>
