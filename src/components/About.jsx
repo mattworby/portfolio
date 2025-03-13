@@ -12,9 +12,9 @@ const About = () => {
     }, []);
 
     return (
-        <div className="flex-1 flex flex-col items-center justify-center text-center px-4 pt-16 pb-8">
-            <div className="bg-black/80 p-4 md:p-8 rounded pixel-border max-w-3xl">
-                <h1 className="text-xl md:text-2xl mb-4 text-white">CHARACTER STATS</h1>
+        <div className="flex-1 flex flex-col items-center justify-center text-center px-2 sm:px-4 pt-16 pb-8">
+            <div className="bg-black/80 p-3 md:p-8 rounded pixel-border max-w-full sm:max-w-3xl">
+                <h1 className="text-lg md:text-2xl mb-4 text-white">CHARACTER STATS</h1>
 
                 <div className="mb-4 text-left">
                     {/* Desktop layout */}
@@ -38,22 +38,22 @@ const About = () => {
                     </div>
 
                     {/* Mobile compressed layout */}
-                    <div className="md:hidden grid grid-cols-2 gap-x-4 gap-y-2 mb-4">
+                    <div className="md:hidden grid grid-cols-1 xs:grid-cols-2 gap-x-2 gap-y-2 mb-4">
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">CLASS:</h3>
-                            <p className="text-cyan-400 text-xs text-right">Full-Stack Developer</p>
+                            <p className="text-cyan-400 text-xs text-right ml-1">Full-Stack Developer</p>
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">LEVEL:</h3>
-                            <p className="text-cyan-400 text-xs text-right">30</p>
+                            <p className="text-cyan-400 text-xs text-right ml-1">30</p>
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">EXP:</h3>
-                            <p className="text-cyan-400 text-xs text-right">8+ Years</p>
+                            <p className="text-cyan-400 text-xs text-right ml-1">8+ Years</p>
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <h3 className="text-yellow-400 text-xs">LOCATION:</h3>
-                            <p className="text-cyan-400 text-xs text-right">St. Louis, MO</p>
+                            <p className="text-cyan-400 text-xs text-right ml-1">St. Louis, MO</p>
                         </div>
                     </div>
 
@@ -100,39 +100,39 @@ const About = () => {
                         </div>
 
                         {/* Mobile compressed skills */}
-                        <div className="md:hidden grid grid-cols-2 gap-1">
+                        <div className="md:hidden grid grid-cols-1 xs:grid-cols-2 gap-1">
                             <div className="flex items-center">
-                                <div className="w-12 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
                                     <div className="h-full bg-green-500 rounded-full" style={{ width: '90%' }}></div>
                                 </div>
                                 <span className="text-white text-xs">React</span>
                             </div>
                             <div className="flex items-center">
-                                <div className="w-12 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
                                     <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
                                 </div>
                                 <span className="text-white text-xs">Node.js</span>
                             </div>
                             <div className="flex items-center">
-                                <div className="w-12 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
                                     <div className="h-full bg-green-500 rounded-full" style={{ width: '80%' }}></div>
                                 </div>
                                 <span className="text-white text-xs">TypeScript</span>
                             </div>
                             <div className="flex items-center">
-                                <div className="w-12 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
                                     <div className="h-full bg-green-500 rounded-full" style={{ width: '75%' }}></div>
                                 </div>
                                 <span className="text-white text-xs">MongoDB</span>
                             </div>
                             <div className="flex items-center">
-                                <div className="w-12 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
                                     <div className="h-full bg-green-500 rounded-full" style={{ width: '85%' }}></div>
                                 </div>
                                 <span className="text-white text-xs">CSS/Tailwind</span>
                             </div>
                             <div className="flex items-center">
-                                <div className="w-12 h-2 bg-gray-700 rounded-full mr-1">
+                                <div className="w-10 h-2 bg-gray-700 rounded-full mr-1">
                                     <div className="h-full bg-green-500 rounded-full" style={{ width: '70%' }}></div>
                                 </div>
                                 <span className="text-white text-xs">AWS</span>
@@ -169,9 +169,9 @@ const About = () => {
                 <a
                     href="/portfolio/matt-resume.pdf"
                     download
-                    className={`inline-flex items-center justify-center bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded pixel-border ${blinkingText ? 'opacity-100' : 'opacity-50'}`}
+                    className={`inline-flex items-center justify-center bg-cyan-600 hover:bg-cyan-700 text-white px-4 sm:px-6 py-2 rounded pixel-border text-sm sm:text-base ${blinkingText ? 'opacity-100' : 'opacity-50'}`}
                 >
-                    <FileText className="mr-2 h-5 w-5" />
+                    <FileText className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     DOWNLOAD CHARACTER SHEET
                 </a>
             </div>
