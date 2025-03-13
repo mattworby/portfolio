@@ -63,7 +63,7 @@ const Projects = () => {
             id: 1,
             title: "Portfolio Website",
             description: "Built Utilizing Various Artificial Intelligence To Learn How To Incorperate AI Into My Workflow",
-            image: "/portfolio_website.png",
+            image: "portfolio_website.png",
             github: "https://github.com/mattworby/portfolio",
             demo: "https://example.com/demo",
             tech: ["React", "Tailwind"]
@@ -72,7 +72,7 @@ const Projects = () => {
             id: 2,
             title: "ARPG Game",
             description: "Current Project! Learning How To Build a 2D Game Using Godot",
-            image: "/arpg_game.png",
+            image: "arpg_game.png",
             github: "https://github.com/mattworby/arpg_game",
             tech: ["Godot"]
         },
