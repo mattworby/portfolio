@@ -63,7 +63,7 @@ const Projects = () => {
             id: 1,
             title: "Portfolio Website",
             description: "Built Utilizing Various Artificial Intelligence To Learn How To Incorperate AI Into My Workflow",
-            image: "portfolio_website.png",
+            image: "public/portfolio_website.png",
             github: "https://github.com/mattworby/portfolio",
             demo: "https://example.com/demo",
             tech: ["React", "Tailwind"]
@@ -145,7 +145,7 @@ const Projects = () => {
         return {
             columns,
             tileHeight,
-            imgHeight: Math.floor(tileHeight * 0.4)
+            imgHeight: Math.floor(tileHeight * 0.7)
         };
     };
 
@@ -189,9 +189,9 @@ const Projects = () => {
                         >
                             <div className="p-2 flex-1 flex flex-col bg-opacity-90">
                                 <h3 className="text-md font-medium text-gray-100 truncate">{project.title}</h3>
-                                <p className="text-gray-200 text-xs mb-1 flex-1 line-clamp-2">{project.description}</p>
+                                <p className="text-gray-200 text-xs mb-4 line-clamp-2">{project.description}</p>
 
-                                <div className="relative">
+                                <div className="relative flex-1">
                                     <img
                                         src={project.image}
                                         alt={project.title}
@@ -216,24 +216,6 @@ const Projects = () => {
                                 </div>
 
                                 <div className="flex justify-between">
-                                    <a
-                                        href={project.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-gray-200 hover:text-white"
-                                        onClick={(e) => e.stopPropagation()}
-                                    >
-                                        <Github size={14} />
-                                    </a>
-                                    <a
-                                        href={project.demo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-gray-200 hover:text-white"
-                                        onClick={(e) => e.stopPropagation()}
-                                    >
-                                        <ExternalLink size={14} />
-                                    </a>
                                 </div>
                             </div>
                         </div>
