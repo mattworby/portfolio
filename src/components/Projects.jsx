@@ -65,7 +65,6 @@ const Projects = () => {
             description: "Built Utilizing Various Artificial Intelligence To Learn How To Incorperate AI Into My Workflow",
             image: "public/portfolio_website.png",
             github: "https://github.com/mattworby/portfolio",
-            demo: "https://example.com/demo",
             tech: ["React", "Tailwind"]
         },
         {
@@ -287,15 +286,6 @@ const Projects = () => {
                             >
                                 <Github size={14} />
                                 GitHub
-                            </a>
-                            <a
-                                href={selectedProject.demo}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-2 py-1 rounded text-sm"
-                            >
-                                <ExternalLink size={14} />
-                                Demo
                             </a>
                         </div>
                     </div>
